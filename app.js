@@ -2,14 +2,14 @@ var restify = require('restify');
 var builder = require('botbuilder');  
 // Setup Restify Server 
 var server = restify.createServer(); 
-server.listen(process.env.port || process.env.PORT || 443, 
+server.listen(process.env.port || process.env.PORT || 3978, 
 function () {    
     console.log('%s listening to %s', server.name, server.url);  
 });  
 // chat connector for communicating with the Bot Framework Service 
 var connector = new builder.ChatConnector({     
-    appId: "2635d20b-b9ac-4670-aa4a-38db0daf3573",     
-    appPassword: "syggeWDC16424~|;ikTAFA{"
+    appId: "d14a3195-d834-4185-8fad-21248b3d0c8a",     
+    appPassword: "mrnrDN2+%dmsXGDPE2814~*"
 });
 // Listen for messages from users  
 server.post('/api/messages', connector.listen());  
