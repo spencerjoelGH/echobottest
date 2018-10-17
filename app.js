@@ -20,6 +20,6 @@ server.post('/api/messages', connector.listen());
 // Create bot dialogs
 bot.dialog('/', function (session) {
 	console.log("Recieved new message",session.message.text)
-    session.send("Hello World");
+    session.send("You said: " + session.message.text);
 });
 
