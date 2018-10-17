@@ -17,3 +17,8 @@ server.post('/api/messages', connector.listen());
 var bot = new builder.UniversalBot(connector, function (session) {     
 session.send("You said: %s", session.message.text); 
 });
+
+
+server.get('/', (req, res, next) => {
+		res.send("HOME OF APP")
+	});
